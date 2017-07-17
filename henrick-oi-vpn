@@ -187,7 +187,7 @@ else
 	echo ""
 	echo "Qual protocolo você deseja para as conexões OPENVPN ?"
 	echo "   1) UDP"
-	echo "   2) TCP (Recomendado)"
+	echo "   2) TCP-client (Recomendado)"
 	read -p "Protocol [1-2]: " -e -i 2 PROTOCOL
 	case $PROTOCOL in
 		1) 
@@ -199,7 +199,7 @@ else
 	esac
 	echo ""
 	echo "Qual porta você deseja usar ?"
-	read -p "Port: " -e -i 8090 PORT
+	read -p "Port: " -e -i 443 PORT
 	echo ""
 	echo "Qual DNS você deseja usar ?"
 	echo "   1) Sistema(Recomendado)"
